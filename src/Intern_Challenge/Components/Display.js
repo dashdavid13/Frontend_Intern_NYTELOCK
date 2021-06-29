@@ -3,10 +3,10 @@ import React from 'react';
 
 
 
-function Display() {
+function Display({newData}) {
   return (
     <div>
-      <h1>hello</h1>
+      <h1>{newData}</h1>
     </div>
   );
 }

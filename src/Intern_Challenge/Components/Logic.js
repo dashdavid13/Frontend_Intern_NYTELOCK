@@ -3,10 +3,12 @@ import Display from './Display';
 
 
 
-function Logic() {
+function Logic({data}) {
+
+  let newData = data[Math.floor(Math.random() * data.length)];
   return (
     <div>
-      <Display />
+      <Display newData={newData}/>
     </div>
   );
 }
