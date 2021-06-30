@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { useState, useEffect} from 'react';
 import './App.css';
 import Logic from './Intern_Challenge/Components/Logic';
