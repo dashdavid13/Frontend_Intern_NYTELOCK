@@ -1,18 +1,25 @@
 import React from 'react';
+import DetailCard from './DetailCard';
+import DisplayCard from './DisplayCard'
 
 
 
+function Display({newData, clicked, setStateId}) {
+ 
 
-function Display({logo_1,logo_2,logo_3,logo_4,logo_5,logo_6}) {
-  function test(){
-    console.log("test")
-  }
-
-  
-
+  const mapData = newData.map(data => {
+        return (
+        <DisplayCard
+            key={data.id}
+            data={data}
+            clicked={clicked}
+            setStateId={setStateId}
+        />
+        )
+    })
   return (
     <>
-
+  <div>
     <div>
       <h6>
         <span className="sub-heading"> <span>⚫</span> How do I know which logo style is right for me?</span>
@@ -21,38 +28,21 @@ function Display({logo_1,logo_2,logo_3,logo_4,logo_5,logo_6}) {
     </div>
     <div>
       <div>
-      <span>Contact Us </span>
+      <span className="contact">Contact Us </span>
       <i>➡️</i>
       </div>
     </div>
+    <br />
+  </div>
+  <div  className="container">
+    {mapData}
+  </div>
+  <div>
+    <DetailCard />
+  </div>
 
-    <div>
-      <div>
-        <h5>{logo_1.logoTitle}</h5>
-        <h5>Logos</h5>
-      </div>
-      <div>
-        <h5>{logo_2.logoTitle}</h5>
-        <h5>Logos</h5>
-      </div>
-      <div>
-        <h5>{logo_3.logoTitle}</h5>
-        <h5>Logos</h5>
-      </div>
-      <div>
-        <h5>{logo_4.logoTitle}</h5>
-        <h5>Logos</h5>
-      </div>
-      <div>
-        <h5>{logo_5.logoTitle}</h5>
-        <h5>Logos</h5>
-      </div>
-      <div>
-        <h5>{logo_6.logoTitle}</h5>
-        <h5>Logos</h5>
-      </div>
-    </div>
     </>
+    
   );
 }
 
