@@ -4,21 +4,18 @@ import Display from './Display';
 
 
 function Logic({newData}) {
-  const [stateId, setStateId] =useState(currentId)
+  const [stateId, setStateId] =useState(1)
   
-  currentId = stateId
 
   
     
-function clicked(currentId){
-  console.log(currentId)
-}
+
  
   return (
     <div>
       <Display
       newData={newData}
-      clicked={clicked}
+    
       />
     </div>
   );
