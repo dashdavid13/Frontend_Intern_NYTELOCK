@@ -11,6 +11,11 @@ function DetailCard(){
             <img src='test' alt="logo"/>
             <img src='test' alt="logo"/>
             <img src='test' alt="logo"/>
+            <h1>
+                <div>
+                    <h4>hello</h4>
+                </div>
+            </h1>
         </div>
     )
   }
