@@ -10,10 +10,10 @@ function DisplayCard({data, clicked, setStateId }) {
 
     return (
         <>
-    {/* <div onClick={clicked}>
+    <div onClick={clicked}>
         <img className="logoImage" alt="logo" src={data.logoImage} />
         <h5>{data.logoTitle}</h5>
-    </div> */}
+    </div>
     </>
     );
   }
