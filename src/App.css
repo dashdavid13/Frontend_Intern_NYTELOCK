@@ -15,14 +15,6 @@
 }
 
 
-.top-container{
-  display: flex;
-  align-self: center;
-}
-
-.contact{
-  margin:60px;
-}
 
 .div{
   flex: auto;
